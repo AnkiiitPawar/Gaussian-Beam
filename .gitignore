@@ -1,0 +1,76 @@
+# --- Never commit the surrounding M.Sc. coursework ---
+# This repo must contain ONLY the Gaussian-Beam project.
+# The parent folder holds course handbooks, marking templates and other
+# students' A-grade sample reports — none of that is ours to publish.
+../
+!../Gaussian-Beam/
+
+# --- Secrets ---
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+credentials.json
+config.local.*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Rust ---
+target/
+**/*.rs.bk
+Cargo.lock.orig
+
+# --- Julia ---
+Manifest.toml
+*.jl.cov
+*.jl.mem
+deps/build.log
+
+# --- C/C++ build ---
+build/
+cmake-build-*/
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# --- Data & artefacts (keep the repo light; use LFS or a data store) ---
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.mat
+data/raw/
+data/large/
+results/scratch/
+
+# --- Notebooks output stripping reminder ---
+# Run `nbstripout --install` before committing notebooks.
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Logs ---
+*.log
+logs/
